@@ -1,10 +1,8 @@
 # UneeqInterns Internship Tasks
 
-> This repository contains two machine learning projects developed as part of the UneeqInterns internship program:
+> This repository contains three machine learning projects developed as part of the UneeqInterns internship program:
 
 ![Roadmap](./cover.png)
-
----
 
 ---
 
@@ -59,3 +57,32 @@ Contains patient demographics, hospital admission details, insurance, billing, m
 - Confusion matrix highlights misclassification patterns, guiding feature improvements.
 
 ---
+
+## 3️⃣ Task 3 – Movie Recommendation System
+
+### Project Overview
+This project builds a movie recommendation system using the MovieLens 100K dataset. It integrates collaborative filtering and content-based filtering to provide personalized movie suggestions. By analyzing user ratings and movie genres, the system predicts user preferences and ranks recommendations effectively.
+
+### Objective
+Develop a recommendation system that suggests relevant movies for users, balancing accuracy and personalization. The system should address cold-start problems and sparsity in user interactions.
+
+### Dataset
+The MovieLens 100K dataset containing:  
+- `u.data` → user-movie ratings  
+- `u.item` → movie metadata (titles, genres, release dates)  
+- `u.user` → user demographic information  
+
+### Approach
+- Exploratory Data Analysis (EDA) to understand rating patterns and sparsity  
+- Feature engineering: User-Item matrix and genre extraction  
+- Preprocessing for collaborative and content-based filtering  
+- Collaborative Filtering: Item-based similarity using cosine similarity  
+- Content-Based Filtering: Genre-based cosine similarity  
+- Evaluation using RMSE and top-K recommendation metrics  
+- Generating personalized top-K movie recommendations  
+
+### Key Insights
+- Most ratings are 3–5 stars; popular movies receive more ratings, showing bias  
+- Collaborative filtering captures interaction patterns effectively, while content-based filtering helps in cold-start scenarios  
+- Combining both approaches improves recommendation relevance and personalization  
+- Top-K recommendations demonstrate actionable suggestions for enhancing user engagement  
